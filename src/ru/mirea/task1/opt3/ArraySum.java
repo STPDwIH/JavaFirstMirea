@@ -2,7 +2,7 @@ package ru.mirea.task1.opt3;
 
 import java.util.Scanner;
 
-public class ArraySum {
+public class ArraySum{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
