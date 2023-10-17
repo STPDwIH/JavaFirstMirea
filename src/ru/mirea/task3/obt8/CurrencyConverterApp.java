@@ -2,7 +2,7 @@ package ru.mirea.task3.obt8;
 
 public class CurrencyConverterApp {
     public static void main(String[] args) {
-        // Установите актуальный обменный курс USD/RUB
+        //актуальный курс USD/RUB
         double exchangeRateUSDtoRUB = 93.50; //курс на текущий момент
 
         // Создайте экземпляр класса CurrencyConverter с заданным обменным курсом
