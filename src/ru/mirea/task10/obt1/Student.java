@@ -15,7 +15,6 @@ public class Student {
         this.group = group;
     }
 
-    // Геттеры
     public String getFirstName() {
         return firstName;
     }
@@ -32,28 +31,11 @@ public class Student {
         return course;
     }
 
-    public String getGroup() {
-        return group;
-    }
-
-    // Сеттеры
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public void setSpecialty(String specialty) {
-        this.specialty = specialty;
-    }
-
     public void setCourse(int course) {
         this.course = course;
     }
 
-    public void setGroup(String group) {
-        this.group = group;
+    public String getGroup() {
+        return group;
     }
 }
