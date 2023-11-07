@@ -5,13 +5,13 @@ public class TestAuthor {
         Author author = new Author("Andrew", "bokapower@yandex.ru", 'M');
 
         // Вывод информации об авторе
-        System.out.println("Author's name: " + author.getName());
-        System.out.println("Author's email: " + author.getEmail());
-        System.out.println("Author's gender: " + author.getGender());
+        System.out.println("Имя: " + author.getName());
+        System.out.println("Почта: " + author.getEmail());
+        System.out.println("Пол: " + author.getGender());
 
         // Изменение email автора
         author.setEmail("sidorin.m.a@mirea.ru");
-        System.out.println("Updated email: " + author.getEmail());
+        System.out.println("Новая почта : " + author.getEmail());
 
         // Вывод информации об авторе с использованием метода toString
         System.out.println(author.toString());

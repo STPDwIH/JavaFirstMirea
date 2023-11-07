@@ -13,20 +13,9 @@ public class Circle {
         return center;
     }
 
-    public void setCenter(Point center) {
-        this.center = center;
-    }
 
     public double getRadius() {
         return radius;
     }
 
-    public void setRadius(double radius) {
-        this.radius = radius;
-    }
-
-    @Override
-    public String toString() {
-        return "Окружность с центром в точке " + center + " и радиусом " + radius;
-    }
 }

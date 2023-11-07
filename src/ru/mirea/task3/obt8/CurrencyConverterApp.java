@@ -9,12 +9,12 @@ public class CurrencyConverterApp {
         CurrencyConverter converter = new CurrencyConverter(exchangeRateUSDtoRUB);
 
         // Конвертация суммы из USD в RUB
-        double amountInUSD = 100.0;
+        double amountInUSD = 59.0;
         double amountInRUB = converter.usdToRub(amountInUSD);
         System.out.println(amountInUSD + " USD = " + amountInRUB + " RUB");
 
         // Конвертация суммы из RUB в USD
-        double anotherAmountInRUB = 5000.0;
+        double anotherAmountInRUB = 10000.0;
         double anotherAmountInUSD = converter.rubToUsd(anotherAmountInRUB);
         System.out.println(anotherAmountInRUB + " RUB = " + anotherAmountInUSD + " USD");
     }

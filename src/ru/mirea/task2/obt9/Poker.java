@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Poker {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);//scanner позволяет читать ввод с клавиатуры
 
         System.out.print("Введите количество игроков: ");
         int numPlayers = scanner.nextInt();
@@ -17,15 +17,15 @@ public class Poker {
             return;
         }
 
-        List<String> deck = generateDeck();
-        shuffleDeck(deck);
+        List<String> deck = generateDeck();//создает стандартную колоду карт и сохраняет ее в deck
+        shuffleDeck(deck);//перемешивает колоду
 
-        int numCardsPerPlayer = 5;
-        for (int player = 0; player < numPlayers; player++) {
-            System.out.println("Игрок " + (player + 1) + ":");
-            for (int card = 0; card < numCardsPerPlayer; card++) {
-                String dealtCard = dealCard(deck);
-                System.out.println(dealtCard);
+        int numCardsPerPlayer = 5;//5 карт
+        for (int player = 0; player < numPlayers; player++) { //цикл перебирает каждого игрока
+            System.out.println("Игрок " + (player + 1) + ":"); //информация о текущем игроке
+            for (int card = 0; card < numCardsPerPlayer; card++) { // цикл раздает карты
+                String dealtCard = dealCard(deck); // берет карту из колоды и сохраняет ее в dealtCard
+                System.out.println(dealtCard); // выводится выданная карта
             }
             System.out.println(); // Пустая строка для разделения игроков
         }

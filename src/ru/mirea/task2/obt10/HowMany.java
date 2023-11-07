@@ -9,7 +9,7 @@ public class HowMany {
         System.out.print("Введите строку: ");
         String input = scanner.nextLine();
 
-        int wordCount = countWords(input);
+        int wordCount = countWords(input); // Вызываем метод для подсчета слов
 
         System.out.println("Количество слов в введенной строке: " + wordCount);
 
@@ -19,10 +19,10 @@ public class HowMany {
     // Метод для подсчета количества слов в строке
     private static int countWords(String input) {
         if (input == null || input.isEmpty()) {
-            return 0;
+            return 0; // Если строка пуста или null, возвращаем 0.
         }
 
         String[] words = input.split("\\s+"); // Разделение строки по пробелам
-        return words.length;
+        return words.length; // Возвращаем количество элементов в массиве words.
     }
 }

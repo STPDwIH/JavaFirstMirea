@@ -56,7 +56,7 @@ public class RandomArray {
     // Метод для вывода массива на экран
     private static void printArray(double[] array) {
         for (double value : array) {
-            System.out.printf("%.4f ", value);
+            System.out.printf("%.4f ", value);// 4 знака после запятой
         }
         System.out.println();
     }

@@ -1,7 +1,7 @@
 package ru.mirea.task2.obt1;
 
 public class Author {
-    private String name;
+    private String name; //private значит что она доступна только внутри этого класса
     private String email;
     private char gender;
 
