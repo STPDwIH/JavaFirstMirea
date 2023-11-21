@@ -13,21 +13,6 @@ public class Computer {
         this.monitor = monitor;
     }
 
-    public ComputerBrand getBrand() {
-        return brand;
-    }
-
-    public Processor getProcessor() {
-        return processor;
-    }
-
-    public Memory getMemory() {
-        return memory;
-    }
-
-    public Monitor getMonitor() {
-        return monitor;
-    }
 
     @Override
     public String toString() {
