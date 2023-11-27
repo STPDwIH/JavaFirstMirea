@@ -52,7 +52,7 @@ public class StringManipulationApp {
     }
 
     public static void extractWords(String input) {
-        Pattern pattern = Pattern.compile("\\b\\w+\\b");
+        Pattern pattern = Pattern.compile("\\b\\p{L}+\\b");
         Matcher matcher = pattern.matcher(input);
 
         System.out.println("Все слова в строке:");
