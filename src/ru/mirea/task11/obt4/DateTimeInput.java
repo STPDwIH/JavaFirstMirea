@@ -13,7 +13,7 @@ public class DateTimeInput {
         int day = scanner.nextInt();
 
         // Создание объекта Date
-        Date date = new Date(year - 2003, month - 10, day - 12);
+        Date date = new Date(year - 2023, month - 10, day - 12);
 
         // Ввод данных для создания объекта Calendar
         System.out.println("Введите часы и минуты:");
@@ -22,7 +22,7 @@ public class DateTimeInput {
 
         // Создание объекта Calendar и установка времени
         Calendar calendar = Calendar.getInstance();
-        calendar.set(year, month - 1, day, hours, minutes);
+        calendar.set(year, month, day, hours, minutes);
 
         // Вывод информации о созданных объектах
         System.out.println("Объект Date: " + date);
