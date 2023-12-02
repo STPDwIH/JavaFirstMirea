@@ -5,13 +5,13 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class GuessGame extends JFrame {
+public class GuessGame_notcomplete extends JFrame {
     private int secretNumber = (int) (Math.random() * 21); // Генерация случайного числа от 0 до 20
     private int attempts = 3; // Количество попыток
 
     private JLabel instructions;
 
-    public GuessGame() {
+    public GuessGame_notcomplete() {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setTitle("Угадайка");
         setSize(500, 500);
@@ -61,7 +61,7 @@ public class GuessGame extends JFrame {
     }
 
     public static void main(String[] args) {
-        GuessGame game = new GuessGame();
+        GuessGame_notcomplete game = new GuessGame_notcomplete();
         game.setVisible(true);
     }
 }
