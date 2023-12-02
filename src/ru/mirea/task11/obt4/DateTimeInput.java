@@ -1,32 +1,28 @@
 package ru.mirea.task11.obt4;
+
+
 import java.util.Calendar;
-import java.util.Date;
 import java.util.Scanner;
+
 public class DateTimeInput {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Ввод данных для создания объекта Date
-        System.out.println("Введите год, месяц и число:");
+        System.out.print("Введите год (например, 2023): ");
         int year = scanner.nextInt();
+        System.out.print("Введите месяц (1-12): ");
         int month = scanner.nextInt();
+        System.out.print("Введите день (1-31): ");
         int day = scanner.nextInt();
-
-        // Создание объекта Date
-        Date date = new Date(year - 2023, month - 10, day - 12);
-
-        // Ввод данных для создания объекта Calendar
-        System.out.println("Введите часы и минуты:");
+        System.out.print("Введите часы (0-23): ");
         int hours = scanner.nextInt();
+        System.out.print("Введите минуты (0-59): ");
         int minutes = scanner.nextInt();
 
-        // Создание объекта Calendar и установка времени
         Calendar calendar = Calendar.getInstance();
-        calendar.set(year, month, day, hours, minutes);
+        calendar.set(year, month - 1, day, hours, minutes); // Месяцы в Calendar начинаются с 0 (январь)
 
-        // Вывод информации о созданных объектах
-        System.out.println("Объект Date: " + date);
-        System.out.println("Объект Calendar: " + calendar.getTime());
+        System.out.println("Созданный Calendar: " + calendar.getTime());
 
         scanner.close();
     }
