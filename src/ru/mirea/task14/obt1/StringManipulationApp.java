@@ -52,7 +52,7 @@ public class StringManipulationApp {
     }
 
     public static void extractWords(String input) {
-        Pattern pattern = Pattern.compile("\\b\\p{L}+\\b");
+        Pattern pattern = Pattern.compile("\\b[\\p{L}&&[^\\d]]+\\b", Pattern.UNICODE_CHARACTER_CLASS);
         Matcher matcher = pattern.matcher(input);
 
         System.out.println("Все слова в строке:");
@@ -60,6 +60,7 @@ public class StringManipulationApp {
             System.out.println(matcher.group());
         }
     }
+
 
     public static void replaceSpacesWithHyphens(String input) {
         String result = input.replaceAll(" ", "-");

@@ -38,7 +38,7 @@ public class LabClassUI {
                     break;
 
                 case 2:
-                    System.out.print("Введите имя студента: ");
+                    System.out.print("Введите Фамилию студента: ");
                     String fullName = scanner.nextLine();
                     try {
                         // Поиск студента по ФИО
