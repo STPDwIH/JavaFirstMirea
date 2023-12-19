@@ -7,6 +7,9 @@ import java.awt.event.ActionListener;
 
 public class JTextAreaExample extends JFrame {
     private JTextArea textArea;
+//инициализирует главное окно, устанавливает его размеры и заголовок,
+//добавляет текстовую область с возможностью прокрутки (чтобы обрабатывать большой объем текста)
+//и создает меню с двумя подменю: "Цвет" и "Шрифт".
 
     public JTextAreaExample() {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -48,6 +51,8 @@ public class JTextAreaExample extends JFrame {
     }
 
     private class ColorActionListener implements ActionListener {
+
+        //Отвечает за изменение цвета текста в текстовой области при выборе определенного цвета в меню.
         private Color color;
 
         public ColorActionListener(Color color) {
@@ -61,6 +66,8 @@ public class JTextAreaExample extends JFrame {
     }
 
     private class FontActionListener implements ActionListener {
+
+        //Отвечает за изменение шрифта текста в текстовой области при выборе определенного шрифта в меню.
         private String fontName;
 
         public FontActionListener(String fontName) {
