@@ -3,6 +3,8 @@ package ru.mirea.task19.obt1;
 import java.math.BigInteger;
 import java.util.Scanner;
 
+//мой ИНН 773773998057 для проверки
+
 public class InnCheck {
     public static void main(String[] args) {
         Scanner scaner = new Scanner(System.in);
